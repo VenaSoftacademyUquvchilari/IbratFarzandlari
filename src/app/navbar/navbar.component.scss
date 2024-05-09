@@ -1,0 +1,101 @@
+nav{
+    width: 1472px;
+    height: 64px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    .nav-items{
+        width: 90%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .nav-left{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .nav-logo img{
+        width: 64px;
+        height: 64px;
+    }
+    .nav-menu ul{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        list-style: none;
+    }
+    .nav-menu ul li{
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .nav-menu ul li a{
+        color: #71717a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+    }
+    .nav-right{
+        width: 270px;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ear-icon{
+        position: relative;
+        width: 22px;
+        height: 22px;
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 1px 0px 0.5px rgb(245, 158, 11);
+       &:hover{
+        background-color: rgb(245, 158, 11);
+        .icon-hidden{
+            visibility: hidden;
+        }
+        .icon-block{
+            visibility: visible;
+        }
+       }
+       .icon-block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+       }
+       }
+    } 
+    .nav-button{
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 1px 0px 0.5px rgb(245, 158, 11);
+        &:hover{
+            background-color: rgb(245, 158, 11);
+            .nav-btn{
+                background-color: rgb(245, 158, 11);
+                color: #fff;
+            }
+        }
+    } .nav-btn{
+        height: 22px;
+        border: none;
+        background-color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(245, 158, 11);
+        
+    }
+    
