@@ -1,0 +1,137 @@
+main{
+    width: 1324px;
+    margin: 0 auto;
+    .main-title{
+        font-size: 54px;
+        font-weight: 500;
+        font-family: Fredoka,sans-serif;
+    } .sariq{
+        color: rgb(245 158 11);
+        font-size: 64px;
+        font-weight: 900;
+    }
+    .border{
+        background-color: #FFF5E9;
+        padding: 15px;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgb(245 158 11);
+    }
+}
+.main-show{
+    justify-content: space-between;
+    margin-top: 60px;
+    .show-item__left{
+        width: 416px;
+        height: 556px;
+        outline: 1px solid #0000003a;
+        padding: 20px;
+        border-radius: 20px;
+        overflow: hidden; /* Hide overflow for the container */
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        padding: 0 20px;
+        
+        .show-title{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.237);
+            padding: 10px;
+            position: sticky;
+            
+        }
+        .show-title img{
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+        .jadvallar{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            overflow-y: auto; /* Add scrollbar when needed */
+            
+            
+                }
+        .jadvallar div{
+            width: 382px;
+            height: 84px;
+            background-color: red;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: start;
+            padding: 15px;
+            z-index: 0;
+            
+        }
+        .jadvallar .rus-tili{
+            background-color: #ECF5FF;
+        }
+        .jadvallar .rus-tili1{
+            background-color: #FFF5E9;
+        }
+        .jadvallar .rus-tili2{
+            background-color: #EEFAF3;
+        }
+    }
+    .show-item__right{
+        width: 846px;
+        height: 505px;
+        background-color: #ECECED;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+.main-section{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between ;
+    .main-left{
+        width: 686px;
+        height: 524px;
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+        .left-title h2{
+            font-size: 54px;
+            font-weight: 500;
+            font-family: Fredoka,sans-serif;
+        }
+        .left-desc p{
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 24px;
+            color: rgb(113, 113, 122);
+        }
+    }
+    .left-btn button{
+        box-shadow: 0px 1px 0px 0.5px rgb(245, 158, 11);
+        border: none;
+        background-color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(245, 158, 11);
+        padding: 15px;
+        border-radius: 10px;
+        width: 195px;
+        height: 56px;
+        margin-top: 20px;
+        &:hover{
+            background-color: rgb(245, 158, 11) ;
+            color: #fff;
+        }
+    }
+    .main-right{
+        width: 594px;
+        height: 594px;
+        .main-right img{
+            width: 100px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+
+        }
+    }
+}
